@@ -1,0 +1,39 @@
+header {
+  nav {
+    background: var(--darkblue);
+
+    .navbar-brand {
+      > img {
+        width: 70px;
+      }
+    }
+
+    .navbar-nav {
+      .nav-link {
+        font-family: var(--textFont);
+        color: var(--menuLink);
+        text-transform: uppercase;
+        font-size: 14px;
+
+        @media (min-width: 1200px) {
+          margin-right: 3.5rem;
+          margin-left: 3.5rem;
+        }
+      }
+
+      .btnMenu {
+        border: 1px solid var(--lightblue);
+        border-radius: 10px;
+      }
+    }
+
+    .navbar-toggler {
+      border: 1px solid var(--lightblue);
+
+      .fa-bars {
+        color: var(--lightblue);
+        font-size: 25px;
+      }
+    }
+  }
+}

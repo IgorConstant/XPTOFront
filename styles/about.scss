@@ -1,0 +1,30 @@
+#about {
+  padding: 70px 0;
+
+  .contentText {
+    h2 {
+      font-family: var(--titleFont);
+      text-transform: uppercase;
+      color: var(--black);
+    }
+  }
+
+  .textAbout {
+    margin-top: 50px;
+
+    p {
+      color: var(--menuLink);
+      font-family: var(--textFont);
+      font-size: 20px;
+    }
+  }
+
+  .blueLine {
+    height: 10px;
+    background: var(--lightblue);
+    width: 60%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

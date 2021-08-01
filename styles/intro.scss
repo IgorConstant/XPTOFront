@@ -1,0 +1,69 @@
+#introBlock {
+  background: url(../../assets/images/bg-header.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100%;
+
+  @media (min-width: 1200px) and (max-width: 1600px) {
+    height: 700px;
+  }
+
+  @media (max-width: 1024px) {
+    background: var(--darkblue);
+    padding: 60px 0;
+  }
+
+  .titleIntro {
+    margin-top: 10%;
+
+    h1 {
+      font-size: 5rem;
+      font-family: var(--titleFont);
+      font-weight: var(--bold);
+      color: var(--white);
+    }
+
+    .line {
+      background: var(--lightblue);
+      height: 15px;
+      width: 30%;
+    }
+
+    p {
+      color: var(--menuLink);
+      font-family: var(--textFont);
+      font-size: 20px;
+
+      @media (min-width: 1200px) {
+        padding-right: 30%;
+      }
+    }
+
+    .scrolling {
+      .fa-chevron-down {
+        color: var(--menuLink);
+        font-size: 35px;
+      }
+    }
+  }
+
+  .sliderBlock {
+    margin-top: 10%;
+    padding-bottom: 60px;
+
+    .carousel-indicators {
+      bottom: -50px;
+
+      [data-bs-target] {
+        background: var(--lightblue);
+        height: 0px;
+        width: 20px;
+        border-radius: 100%;
+      }
+    }
+
+    .carousel-indicators .active {
+      background: var(--darkblue);
+    }
+  }
+}

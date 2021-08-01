@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+// 1. Framework Bootstrap 5.2
+@import "node_modules/bootstrap/scss/bootstrap.scss";
+@import "node_modules/bootstrap/scss/bootstrap-utilities.scss";
+
+// 2. Custom
+@import "base";
+@import "header";
+@import "intro";
+@import "about";
+@import "imgBlock";
+@import "cards";
+@import "tableBlock";
+@import "footer";

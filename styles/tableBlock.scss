@@ -1,0 +1,46 @@
+#tableBlock {
+  padding: 60px 0;
+
+  .titleBlock {
+    h1 {
+      font-size: 6.5rem;
+      font-family: var(--titleFont);
+      font-weight: var(--bold);
+      text-transform: uppercase;
+      color: var(--darkblue);
+
+      @media (max-width: 999px) {
+        font-size: 4.5rem;
+      }
+    }
+
+    p {
+      font-family: var(--textFont);
+    }
+  }
+
+  .tableBlock {
+    @media (min-width: 1200px) {
+      padding: 0 40px;
+    }
+
+    .table {
+      border: 2px solid var(--white);
+
+      .firstRow {
+        background: #d9d9d9;
+      }
+
+      .secondRow {
+        background: #b4b4b4;
+      }
+
+      td {
+        background: #dcdcdc;
+        padding-left: 10px;
+        font-family: var(--textFont);
+        color: #9c9c9c;
+      }
+    }
+  }
+}

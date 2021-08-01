@@ -1,0 +1,45 @@
+#imgBlock {
+  background: url(../../assets/images/bg-lightblue.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  @media (max-width: 1024px) {
+    background: var(--lightblue);
+    padding: 60px 0;
+    height: 100%;
+  }
+
+  .contentText {
+    h1 {
+      color: var(--darkblue);
+      text-transform: uppercase;
+      font-family: var(--titleFont);
+      font-weight: var(--bold);
+
+      @media (min-width: 1200px) {
+        font-size: 6rem;
+      }
+    }
+
+    p {
+      color: var(--darkblue);
+      font-family: var(--textFont);
+      font-size: 20px;
+
+      @media (min-width: 1200px) {
+        padding-right: 15%;
+      }
+    }
+  }
+
+  .imgCircle {
+    padding: 60px 0;
+
+    > img {
+      @media (min-width: 1000px) and (max-width: 1366px) {
+        max-width: 500px;
+      }
+    }
+  }
+}

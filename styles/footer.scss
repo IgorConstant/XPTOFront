@@ -1,0 +1,99 @@
+footer {
+  background: url(../../assets/images/bg-darkblue.png) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 750px;
+
+  @media (max-width: 1024px) {
+    background: var(--darkblue);
+  }
+
+  .container {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .titleFooter {
+    h1 {
+      font-size: 6.5rem;
+      font-family: var(--titleFont);
+      font-weight: var(--bold);
+      text-transform: uppercase;
+      color: var(--white);
+
+      @media (max-width: 999px) {
+        font-size: 4.5rem;
+      }
+    }
+  }
+
+  .modalBlock {
+    a {
+      color: var(--white);
+      font-family: var(--textFont);
+      text-transform: uppercase;
+    }
+  }
+
+  .formBlock {
+    padding: 0 10%;
+
+    @media (max-width: 1024px) {
+      padding: 0;
+      margin-top: 25px;
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+
+      label {
+        font-family: var(--textFont);
+        text-transform: uppercase;
+        color: var(--white);
+        margin-bottom: 10px;
+      }
+
+      .form-control,
+      .form-check-input {
+        background: transparent;
+        border: 2px solid var(--lightblue);
+      }
+
+      .form-check-label {
+        a {
+          color: var(--white);
+        }
+      }
+
+      .btn-primary {
+        background: var(--lightblue);
+        width: 100%;
+        padding: 15px 0;
+        text-transform: uppercase;
+        font-family: var(--textFont);
+        border: none;
+        color: var(--darkblue);
+        font-weight: var(--bold);
+      }
+    }
+  }
+}
+
+.modal-dialog {
+  .modal-content {
+    .modal-header {
+      .modal-title {
+        font-family: var(--titleFont);
+        text-transform: uppercase;
+        font-weight: var(--bold);
+      }
+    }
+
+    .modal-body {
+      p {
+        font-family: var(--textFont);
+      }
+    }
+  }
+}
